@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TranslateW</class>
+ <widget class="QWidget" name="TranslateW">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>401</width>
+    <height>224</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>401</width>
+    <height>224</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>401</width>
+    <height>224</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>English Train</string>
+  </property>
+  <widget class="QLabel" name="translateThis">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>191</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Переведите на русский:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="wordToTranslate">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>351</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ПРОБЛЕМЫ СОЕДИНЕНИЯ С СЕРВЕРОМ. ПОЖАЛУЙСТА ПОДОЖДИТЕ.</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okey">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>60</y>
+     <width>31</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userTranslate">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Exit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>61</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="text">
+     <string>Следующее слово через:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="timer">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>минут</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="dontKnow">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Не знаю</string>
+   </property>
+  </widget>
+  <zorder>translateThis</zorder>
+  <zorder>splitter</zorder>
+  <zorder>wordToTranslate</zorder>
+  <zorder>okey</zorder>
+  <zorder>userTranslate</zorder>
+  <zorder>Exit</zorder>
+  <zorder>timer</zorder>
+  <zorder>label_2</zorder>
+  <zorder>dontKnow</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Exit</sender>
+   <signal>clicked()</signal>
+   <receiver>TranslateW</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>225</x>
+     <y>158</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dontKnow</sender>
+   <signal>clicked()</signal>
+   <receiver>TranslateW</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>42</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
